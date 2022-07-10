@@ -14,10 +14,10 @@
     </header>
     <br>
     <div align="center">
-      <button class="toolbutton" type="button" onclick="copyScriptToClipboard('https://gist.githubusercontent.com/VillainsRule4000/85a84d797ca79fb40487f58f54361567/raw/2be65e750671bc74876a7b45b6775e9853dfb15c/c+3164')">Copy c+3164</button>
+      <button class="toolbutton" type="button" onclick="copyToClipboard('https://raw.githubusercontent.com/VillainsRule4000/c3164/main/character')">Copy c+3164</button>
     </div>
     <script>
-      async function copyScriptToClipboard(scripturl) {
+      async function copyToClipboard(scripturl) {
       	const scriptData = await (await fetch(scripturl)).text();
       	  navigator.clipboard.writeText(scriptData).then(function () {
     		  alert("Copied c+3164 to clipboard.");
